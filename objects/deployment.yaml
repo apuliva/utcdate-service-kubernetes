@@ -10,7 +10,7 @@ spec:
         app: utcdate-service
     spec:
       containers:
-      - name: aggregator-service
+      - name: utcdate-service
         image: eu.gcr.io/deploying-software-on-kubernetes/utcdate-service:1.0
         ports:
         - containerPort: 8081
