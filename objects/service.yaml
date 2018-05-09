@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: utcdate-service
+spec:
+  ports:
+  - port: 80
+    targetPort: 8081
+  selector:
+    app: utcdate-service
+  type: LoadBalancer
